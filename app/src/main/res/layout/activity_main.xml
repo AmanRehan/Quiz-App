@@ -12,362 +12,419 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="GK QUIZ"
-                android:id="@+id/title"
-                android:textSize="50sp"
-                android:textAlignment="center"
-                android:backgroundTint="#F4511E"
-                android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00ACC1"
+            android:textColor="@android:color/black"
+            android:text="GK QUIZ"
+            android:textAlignment="center"
+            android:textSize="50sp"
+            android:textStyle="bold" />
 
         <TextView
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-            android:text="-----------------------------------------------------------------------------"
-            android:textStyle="bold"/>
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="--------------------------------------------------------------------------------------------"
+            android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Q1. What is the correct alignment during a lunar eclipse?"
-                android:textSize="25sp"/>
-        <RadioGroup
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/radioGrp">
+            android:text="Q1. What is the correct alignment during a lunar eclipse?"
+            android:textSize="25sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGrp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
             <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:id="@+id/q11"
-                android:text="Sun, Moon, Earth"
-                android:onClick="display"/>
-
-            <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="display"
+                android:text="Sun, Moon, Earth" />
+
+            <RadioButton
                 android:id="@+id/q12"
-                android:text="Moon, Sun, Earth"
-                android:onClick="display"/>
-
-            <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="display"
+                android:text="Moon, Sun, Earth" />
+
+            <RadioButton
                 android:id="@+id/q13"
-                android:text="Sun, Earth, Moon"
-                android:onClick="display"/>
-
-            <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="display"
+                android:text="Sun, Earth, Moon" />
+
+            <RadioButton
                 android:id="@+id/q14"
-                android:text="Earth, Sun, Moon"
-                android:onClick="display"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="display"
+                android:text="Earth, Sun, Moon" />
         </RadioGroup>
 
 
         <ToggleButton
+            android:id="@+id/togbtn1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Show Answer"
-            android:id="@+id/togbtn1"
-            />
+            android:text="Show Answer" />
+
         <TextView
+            android:id="@+id/answer1"
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:text="Sun, Earth, Moon"
-            android:visibility="invisible"
-            android:id="@+id/answer1"/>
+            android:visibility="invisible" />
 
         <TextView
-        android:layout_width="match_parent"
-        android:layout_height="40dp"/>
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
 
         <TextView
-            android:text="Q2. Which is the closest object to Earth?"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="25sp"/>
+            android:text="Q2. Which is the closest object to Earth?"
+            android:textSize="25sp" />
 
         <RadioGroup
+            android:id="@+id/radioGrp2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/radioGrp2">
+            android:layout_height="wrap_content">
+
             <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:id="@+id/q21"
-                android:text="Jupiter"
-                android:onClick="display2"/>
-
-            <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="display2"
+                android:text="Jupiter" />
+
+            <RadioButton
                 android:id="@+id/q22"
-                android:text="Moon"
-                android:onClick="display2"/>
-
-            <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="display2"
+                android:text="Moon" />
+
+            <RadioButton
                 android:id="@+id/q23"
-                android:text="Sun"
-                android:onClick="display2"/>
-
-            <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="display2"
+                android:text="Sun" />
+
+            <RadioButton
                 android:id="@+id/q24"
-                android:text="Pluto"
-                android:onClick="display2"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="display2"
+                android:text="Pluto" />
         </RadioGroup>
+
         <ToggleButton
+            android:id="@+id/togbtn2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Show Answer"
-            android:id="@+id/togbtn2"
-            />
+            android:text="Show Answer" />
+
         <TextView
+            android:id="@+id/answer2"
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:text="Moon"
-            android:visibility="invisible"
-            android:id="@+id/answer2"/>
+            android:visibility="invisible" />
 
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="40dp"/>
+            android:layout_height="40dp" />
+
         <TextView
-            android:text="Q3. Which is the largest planet in the solar system?"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="25sp"/>
+            android:text="Q3. Which is the largest planet in the solar system?"
+            android:textSize="25sp" />
 
         <RadioGroup
+            android:id="@+id/radioGrp3"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/radioGrp3">
+            android:layout_height="wrap_content">
+
             <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:id="@+id/q31"
-                android:text="Jupiter"
-                android:onClick="display3"/>
-
-            <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="display3"
+                android:text="Jupiter" />
+
+            <RadioButton
                 android:id="@+id/q32"
-                android:text="Mars"
-                android:onClick="display3"/>
-
-            <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="display3"
+                android:text="Mars" />
+
+            <RadioButton
                 android:id="@+id/q33"
-                android:text="Saturn"
-                android:onClick="display3"/>
-
-            <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="display3"
+                android:text="Saturn" />
+
+            <RadioButton
                 android:id="@+id/q34"
-                android:text="Pluto"
-                android:onClick="display3"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="display3"
+                android:text="Pluto" />
         </RadioGroup>
+
         <ToggleButton
+            android:id="@+id/togbtn3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Show Answer"
-            android:id="@+id/togbtn3"
-            />
+            android:text="Show Answer" />
+
         <TextView
+            android:id="@+id/answer3"
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:text="Jupiter"
-            android:visibility="invisible"
-            android:id="@+id/answer3"/>
+            android:visibility="invisible" />
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="40dp"/>
+            android:layout_height="40dp" />
+
         <TextView
-            android:text="Q4. What is the closet planet to Earth?"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="25sp"/>
+            android:text="Q4. What is the closet planet to Earth?"
+            android:textSize="25sp" />
 
         <RadioGroup
+            android:id="@+id/radioGrp4"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/radioGrp4">
+            android:layout_height="wrap_content">
+
             <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:id="@+id/q41"
-                android:text="Jupiter"
-                android:onClick="display4"/>
-
-            <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="display4"
+                android:text="Jupiter" />
+
+            <RadioButton
                 android:id="@+id/q42"
-                android:text="Mercury"
-                android:onClick="display4"/>
-
-            <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="display4"
+                android:text="Mercury" />
+
+            <RadioButton
                 android:id="@+id/q43"
-                android:text="Sun"
-                android:onClick="display4"/>
-
-            <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="display4"
+                android:text="Sun" />
+
+            <RadioButton
                 android:id="@+id/q44"
-                android:text="Pluto"
-                android:onClick="display4"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="display4"
+                android:text="Pluto" />
         </RadioGroup>
+
         <ToggleButton
+            android:id="@+id/togbtn4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Show Answer"
-            android:id="@+id/togbtn4"
-            />
+            android:text="Show Answer" />
+
         <TextView
+            android:id="@+id/answer4"
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:text="Mercury"
-            android:visibility="invisible"
-            android:id="@+id/answer4"/>
+            android:visibility="invisible" />
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="40dp"/>
+            android:layout_height="40dp" />
+
         <TextView
-            android:text="Q5. What two gases mostly make up Saturn?"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="25sp"/>
+            android:text="Q5. What two gases mostly make up Saturn?"
+            android:textSize="25sp" />
 
         <RadioGroup
+            android:id="@+id/radioGrp5"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/radioGrp5">
+            android:layout_height="wrap_content">
+
             <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:id="@+id/q51"
-                android:text="oxygen and helium"
-                android:onClick="display5"/>
-
-            <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="display5"
+                android:text="oxygen and helium" />
+
+            <RadioButton
                 android:id="@+id/q52"
-                android:text="oxygen and nitrogen"
-                android:onClick="display5"/>
-
-            <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="display5"
+                android:text="oxygen and nitrogen" />
+
+            <RadioButton
                 android:id="@+id/q53"
-                android:text="hydrogen and helium"
-                android:onClick="display5"/>
-
-            <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="display5"
+                android:text="hydrogen and helium" />
+
+            <RadioButton
                 android:id="@+id/q54"
-                android:text="hydrogen and nitrogen"
-                android:onClick="display5"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="display5"
+                android:text="hydrogen and nitrogen" />
         </RadioGroup>
 
         <ToggleButton
+            android:id="@+id/togbtn5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Show Answer"
-            android:id="@+id/togbtn5"
-            />
+            android:text="Show Answer" />
+
         <TextView
+            android:id="@+id/answer5"
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:text="hydrogen and helium"
-            android:visibility="invisible"
-            android:id="@+id/answer5"/>
+            android:visibility="invisible" />
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="40dp"/>
+            android:layout_height="40dp" />
+
         <TextView
-            android:text="Q6.Which is the fifth planet away from the Sun in our solar system, or the first outer planet?"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="25sp"/>
+            android:text="Q6.Which is the fifth planet away from the Sun in our solar system, or the first outer planet?"
+            android:textSize="25sp" />
 
         <RadioGroup
+            android:id="@+id/radioGrp6"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/radioGrp6">
+            android:layout_height="wrap_content">
+
             <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:id="@+id/q61"
-                android:text="Jupiter"
-                android:onClick="display6"/>
-
-            <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="display6"
+                android:text="Jupiter" />
+
+            <RadioButton
                 android:id="@+id/q62"
-                android:text="Mercury"
-                android:onClick="display6"/>
-
-            <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="display6"
+                android:text="Mercury" />
+
+            <RadioButton
                 android:id="@+id/q63"
-                android:text="Saturn"
-                android:onClick="display6"/>
-
-            <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="display6"
+                android:text="Saturn" />
+
+            <RadioButton
                 android:id="@+id/q64"
-                android:text="Pluto"
-                android:onClick="display6"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="display6"
+                android:text="Pluto" />
         </RadioGroup>
+
         <ToggleButton
+            android:id="@+id/togbtn6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Show Answer"
-            android:id="@+id/togbtn6"
-            />
+            android:text="Show Answer" />
+
         <TextView
+            android:id="@+id/answer6"
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:text="Saturn"
-            android:visibility="invisible"
-            android:id="@+id/answer6"/>
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q7. Which of these planets are inside the Asteroid Belt?"
+            android:textSize="25sp" />
+
+        <CheckBox
+            android:id="@+id/checkbox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mercury" />
+
+        <CheckBox
+            android:id="@+id/checkbox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mars" />
+
+        <CheckBox
+            android:id="@+id/checkbox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Earth" />
+
+        <CheckBox
+            android:id="@+id/checkbox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Neptune" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
 
         <Button
+            android:id="@+id/submitbtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Submmit"
-            android:onClick="finalDisplay"/>
+            android:onClick="finalDisplay"
+            android:text="Submit"
+            android:textSize="25sp"
+            android:backgroundTint="#00ACC1"/>
 
         <TextView
             android:id="@+id/correctans"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/wrongans"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
 
     </LinearLayout>
 
